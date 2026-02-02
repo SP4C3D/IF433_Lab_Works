@@ -3,6 +3,7 @@ package oop_00000124636_SebastianBenaya.week01
 fun main(){
     val gameTitle: String = "Forza Horizon 6"
     val price: Int = 900000
+    printReceipt(title = gameTitle, finalPrice = price)
 }
 
 fun calculateDiscount(price: Int): Int {
@@ -11,4 +12,8 @@ fun calculateDiscount(price: Int): Int {
     } else {
         return (price * 0.7).toInt()
     }
+}
+
+fun printReceipt(title: String, finalPrice: Int) {
+    println("Game yang dibeli: $title\nHarga awal: $finalPrice\nHarga akhir: ${calculateDiscount(finalPrice)}")
 }

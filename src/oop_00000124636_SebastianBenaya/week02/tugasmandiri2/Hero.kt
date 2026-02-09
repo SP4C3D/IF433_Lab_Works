@@ -14,7 +14,6 @@ class Hero(val name: String, var hp: Int, val baseDamage: Int){
     }
 
     fun isAlive(): Boolean{
-        return if(hp > 0) true
-        else false
+        return (hp > 0)
     }
 }

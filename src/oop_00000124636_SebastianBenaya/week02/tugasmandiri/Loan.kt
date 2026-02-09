@@ -1,11 +1,11 @@
 package oop_00000124636_SebastianBenaya.week02.tugasmandiri
 
 class Loan(val bookTitle: String, val borrower: String, var loanDuration: Int = 1){
-    fun calculateFine(){
+    fun calculateFine(loanDuration: Int): Int {
         if(loanDuration > 3){
-            val denda: Int = (loanDuration - 3) * 2000
+            return (loanDuration - 3) * 2000
         }else{
-            val denda: Int = 0
+            return 0
         }
     }
 }

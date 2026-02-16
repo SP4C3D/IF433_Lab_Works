@@ -1,4 +1,4 @@
-package oop_00000124636_SebastianBenaya.week03.TugasMandiri1.Weapon
+package oop_00000124636_SebastianBenaya.week03.TugasMandiri
 
 class Weapon(val name: String) {
     var damage: Int = 67

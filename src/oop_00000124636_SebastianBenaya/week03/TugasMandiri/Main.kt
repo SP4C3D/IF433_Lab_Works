@@ -1,4 +1,4 @@
-package oop_00000124636_SebastianBenaya.week03.TugasMandiri1.Weapon
+package oop_00000124636_SebastianBenaya.week03.TugasMandiri
 
 fun main(){
     val w1 = Weapon("Ben")

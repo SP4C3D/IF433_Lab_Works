@@ -24,13 +24,13 @@ fun main() {
 
     while (h1.isAlive() && enemyHp > 0) {
         print("Pilih:\n1.Serang\n2.Kabur\n")
-        var pilihan = scanner.nextInt()
+        val pilihan = scanner.nextInt()
         if (pilihan == 1) {
             h1.attack(enemyName)
             enemyHp -= h1.baseDamage
             if (enemyHp < 0) {
                 enemyHp = 0
-                println("Sisa HP $enemyName adalah $enemyHp")
+                println("Sisa HP $enemyName adalah 0")
                 break
             }
             println("Sisa HP $enemyName adalah $enemyHp")

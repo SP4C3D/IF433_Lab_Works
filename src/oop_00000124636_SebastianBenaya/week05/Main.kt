@@ -12,7 +12,7 @@ fun main(){
 
         when(pegawai){
             is Dosen -> {
-                println("=> Terdeteksi sebagai Dosen (NIDN: ${pegawai.nidn}")
+                println("=> Terdeteksi sebagai Dosen (NIDN: ${pegawai.nidn})")
                 pegawai.mengajar()
             }
             is Admin -> {

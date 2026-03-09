@@ -8,4 +8,7 @@ fun main(){
     hub.addDevice(sl1)
     hub.addDevice(ss1)
     hub.addDevice(cctv1)
+
+    hub.activateSecurityMode()
+    hub.turnOffAllSwitches()
 }

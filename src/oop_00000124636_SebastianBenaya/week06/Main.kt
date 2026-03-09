@@ -1,7 +1,7 @@
 package oop_00000124636_SebastianBenaya.week06
 
 fun processCheckout(method: PaymentMethod, amount: Double) {
-    println("-> Memulai checkout...")
+    println("-> Memulai checkout..")
     method.pay(amount)
 }
 

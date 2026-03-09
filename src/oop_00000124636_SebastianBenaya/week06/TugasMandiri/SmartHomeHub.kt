@@ -2,7 +2,9 @@ package oop_00000124636_SebastianBenaya.week06.TugasMandiri
 
 class SmartHomeHub (){
     val devices = mutableListOf<SmartDevice>()
-    fun addDevice(device: SmartDevice) {}
+    fun addDevice(device: SmartDevice) {
+        devices.add(device)
+    }
     fun turnOffAllSwitches(){
         for (device in devices) {
             if(device is Switchable) {device.turnOff()}

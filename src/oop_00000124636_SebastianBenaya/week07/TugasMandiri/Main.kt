@@ -8,4 +8,11 @@ fun main(){
     val senjata = Weapon.forgeStarterSword()
 
     println("\nAnda mendapatkan ${senjata.item.name} (Damage: ${senjata.item.damage}, Durability: ${senjata.durability}, Rarity: ${senjata.item.rarity})")
+
+    val senjataBaru = senjata.item.copy(damage = 25)
+
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal Bahlil"))
+    processEvent(BattleState.LootDropped(senjataBaru))
+    processEvent(BattleState.GameOver("Terkena jebakan racun munir"))
 }

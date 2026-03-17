@@ -1,6 +1,6 @@
 package oop_00000124636_SebastianBenaya.week07.TugasMandiri
 
-private class Weapon(val item: GameItem, val durability: Int){
+class Weapon private constructor(val item: GameItem, val durability: Int){
     companion object{
         fun forgeStarterSword(): Weapon{
             val item = GameItem("Pedang Kayu Bapuk", 5, ItemRarity.COMMON)

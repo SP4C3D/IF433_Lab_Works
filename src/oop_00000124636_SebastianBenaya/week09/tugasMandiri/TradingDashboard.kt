@@ -22,5 +22,5 @@ fun main(){
     println("=== CRYPTO TRADING DASHBOARD ===")
     topPerformersString.forEach {println(it)}
     worstPerformersString.forEach {println(it)}
-    println("Semua token: ${uniquePairs}")
+    println("Semua token: ${uniquePairs}") //tesnya aman
 }

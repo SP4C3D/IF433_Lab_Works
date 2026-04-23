@@ -10,5 +10,9 @@ fun main(){
         TradeLog("OOPIDRT", "Short", 3, 17.6, "OPEN")
     )
 
-    val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
+    val closedTrades = tradeHistory.filter {it.status == "CLOSED"}
+    val winningTrades = closedTrades.filter {it.roe > 0}
+    for (trade in winningTrades) {
+        println("Trade: $trade")
+    }
 }

@@ -12,7 +12,5 @@ fun main(){
 
     val closedTrades = tradeHistory.filter {it.status == "CLOSED"}
     val winningTrades = closedTrades.filter {it.roe > 0}
-    for (trade in winningTrades) {
-        println("Trade: $trade")
-    }
+    val losingTrades = closedTrades.filter {it.roe <= 0}
 }

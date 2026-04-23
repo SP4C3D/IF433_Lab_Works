@@ -14,5 +14,7 @@ fun main(){
     val winningTrades = closedTrades.filter {it.roe > 0}
     val losingTrades = closedTrades.filter {it.roe <= 0}
     val sortedWins = winningTrades.sortedByDescending { it.roe }
+    val sortedLosses = losingTrades.sortedBy { it.roe }
     val topPerformersString = sortedWins.map{"WIN [${it.pair} - ${it.position}]: +${it.roe}% ROE (Lev: ${it.leverage}x)"}
+    val worstPerformersString = sortedLosses.map{"LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)"}
 }

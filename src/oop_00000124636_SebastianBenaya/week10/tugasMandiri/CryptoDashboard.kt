@@ -9,7 +9,8 @@ fun main(){
     println(response.status)
     response.data.forEach { println(it) }
     val txRepo = WalletRepository<Transaction>()
-    txRepo.add(Transaction(1, 67.6767))
-    txRepo.add(Transaction(2, 7.9876))
-    txRepo.add(Transaction(3, 1.5678))
+    txRepo.add(Transaction("C1", 67.6767))
+    txRepo.add(Transaction("C2", 7.9876))
+    txRepo.add(Transaction("C3", 1.5678))
+    txRepo.getAll().forEach { println(it) }
 }

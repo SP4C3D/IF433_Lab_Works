@@ -29,4 +29,8 @@ fun main(){
         println("Terdeteksi kamera: ")
         println(it.diagnose())
     }
+
+    with(homeDevices){
+        println("Jumlah perangkat yang terdeteksi: ${this.size}")
+    }
 }

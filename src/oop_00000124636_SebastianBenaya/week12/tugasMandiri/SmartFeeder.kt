@@ -39,5 +39,5 @@ fun main(){
     }.onFailure{ error ->
         println("Peringatan ke Pemilik: ${error.message}")
         println("Rekomendasi: Berikan chicken jerky secara manual :D")
-    }
+    } //Final Run aman
 }

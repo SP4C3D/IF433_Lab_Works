@@ -47,5 +47,6 @@ fun main() {
 
     val loadedData = loadTrades(file)
 
-    val sumPnl = loadedData.sumOf {it.pnl}
+    val totalPnl = loadedData.sumOf {it.pnl}
+    println("=== TOTAL PnL BERSIH: $totalPnl ===")
 }

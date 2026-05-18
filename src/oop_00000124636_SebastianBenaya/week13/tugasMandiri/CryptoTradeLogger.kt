@@ -11,7 +11,7 @@ fun fromCsvTrade(line: String): TradeRecord? {
     return try {
         TradeRecord(parts[0].toInt(), parts[1], parts[2], parts[3].toDouble(), parts[4].toDouble())
     } catch (e: Exception) {
-        println("(Log) Error: $line")
+        println("(Log) Data korup diabaikan: $line")
         null
     }
 }

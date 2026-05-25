@@ -51,3 +51,5 @@ class SafeOrderProcessor(val repo: OrderRepository, val notifier: NotificationSe
         notifier.sendNotification(itemName)
     }
 }
+
+//typo dikit di commitnya

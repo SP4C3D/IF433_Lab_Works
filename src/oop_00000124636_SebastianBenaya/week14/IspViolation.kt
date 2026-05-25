@@ -6,8 +6,6 @@ interface MultifunctionDevice {
     fun fax(doc: String)
 }
 
-class SimplePrinter : MultifunctionDevice {
+class ModernSimplePrinter : Printable {
     override fun print(doc: String) = println("Printing: $doc")
-    override fun scan(doc: String) = throw UnsupportedOperationException("No scanner")
-    override fun fax(doc: String) = throw UnsupportedOperationException("No fax")
 }

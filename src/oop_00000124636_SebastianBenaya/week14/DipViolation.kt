@@ -4,7 +4,6 @@ class MySQLDatabase {
     fun query(sql: String): List<String> = listOf("data1", "data2")
 }
 
-class UserService {
-    private val database = MySQLDatabase()
-    fun getUser(id: Int) = database.query(("SELECT * FROM users WHERE id =$id"))
+class SafeUserService(private val db: Database) {
+    fun getUser(id: Int) = db.query(("SELECT * FROM users WHERE id =$id"))
 }
